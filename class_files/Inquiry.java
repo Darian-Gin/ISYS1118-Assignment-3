@@ -17,6 +17,10 @@ public class Inquiry {
     }
 
     /* Methods */
+    public Inquiry getInquiry(){
+        Inquiry inquiry = new Inquiry();
+        return inquiry;
+    }
     public void updateStatus(String Status){
 
     }

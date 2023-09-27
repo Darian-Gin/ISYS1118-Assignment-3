@@ -49,6 +49,7 @@ public class Course {
         this.briefIntroduction = briefIntroduction;
         this.cost = cost;
         this.refundOption = refundOption;
+        
     }
 
     /* Getters */
