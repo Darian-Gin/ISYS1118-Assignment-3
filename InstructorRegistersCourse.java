@@ -6,12 +6,13 @@ public class InstructorRegistersCourse {
     public static void main(String[] args) {
 
         Course newCourse =  new Course();
-        Instructor newInstructor = new Instructor();
+        Instructor newInstructor = new Instructor("IFN", "ILN", 8752, "Email", "Iusername", "Ipassword", 1234);
         Invoice newInvoice = new Invoice();
         Date date = new Date();
 
         newCourse.setCourseDetails(1234, "IFN", "Software Engineering Fundamentals", "CourseSubject", "Duration", "CourseIntro", 0.0, true);
-        newInstructor.setInstructorDetails("IFN", "ILN", 8752, "Email", "Iusername", "Ipassword", 1234);
+        //newInstructor.setInstructorDetails("IFN", "ILN", 8752, "Email", "Iusername", "Ipassword", 1234);
+        newInstructor.verifyDetails(newInstructor);
         newInvoice.setInvoiceDetails(123, newInstructor.getInstructorID(), date, date, newCourse.getTitle() );
         newInvoice.printInvoice();
 

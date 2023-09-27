@@ -8,6 +8,15 @@ public class Instructor extends Employee{
     public Instructor(){
         instructorId = 0;
     }
+    public Instructor(String firstName, String lastName, int ID, String email, String username, String password, int contactNumber){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.instructorId= ID;
+        this.email = email;
+        this.username = username;
+        this.password = password;
+        this.contactNumber = contactNumber;
+    }
 
     /* Methods */
     public void createCourse(){

@@ -18,7 +18,10 @@ public class Employee extends User{
     }
 
     /* Getters */
-    public String getEmployeeID(){
+    public String getEmployeeID() {
         return employeeId;
+    }
+    public boolean verifyDetails(Instructor instructor){
+        return true;
     }
 }
