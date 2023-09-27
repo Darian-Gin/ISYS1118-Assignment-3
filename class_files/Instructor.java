@@ -2,11 +2,11 @@ package class_files;
 public class Instructor extends Employee{
 
     /* Attributes */
-    String instructorId = "";
+    int instructorId = 0;
 
     /* Constructor */
     public Instructor(){
-        instructorId = "N/A";
+        instructorId = 0;
     }
 
     /* Methods */
@@ -15,9 +15,10 @@ public class Instructor extends Employee{
     }
 
     /* Setters */
-    public void setInstructorDetails(String firstName, String lastName, String email, String username, String password, int contactNumber){
+    public void setInstructorDetails(String firstName, String lastName, int ID, String email, String username, String password, int contactNumber){
         this.firstName = firstName;
         this.lastName = lastName;
+        this.instructorId= ID;
         this.email = email;
         this.username = username;
         this.password = password;
@@ -25,7 +26,7 @@ public class Instructor extends Employee{
     }
 
     /* Getters */
-    public String getInstructorID() {
+    public int getInstructorID() {
         return instructorId;
     }
 }

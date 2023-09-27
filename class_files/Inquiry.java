@@ -29,7 +29,6 @@ public class Inquiry {
     }
 
     /* Getters */
-
     public int getInquiryID(){
         return ID;
     }
