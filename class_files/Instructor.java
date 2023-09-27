@@ -1,4 +1,7 @@
 package class_files;
+
+import java.util.Date;
+
 public class Instructor extends Employee{
 
     /* Attributes */
@@ -20,6 +23,16 @@ public class Instructor extends Employee{
 
     /* Methods */
     public void createCourse(){
+
+        // CreateObjects
+        Course newCourse =  new Course();
+        Instructor newInstructor = new Instructor("IFN", "ILN", 8752, "Email", "Iusername", "Ipassword", 1234);
+        Payment payment = new Payment();
+
+        // Perform Sequence Diagram Methods for Registering a Course
+        newCourse.setCourseDetails(1234, "IFN", "Software Engineering Fundamentals", "CourseSubject", "Duration", "CourseIntro", 0.0, true);
+        newInstructor.verifyDetails(newInstructor);
+        payment.confirmPayment();
 
     }
 

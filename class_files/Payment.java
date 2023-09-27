@@ -1,6 +1,7 @@
-import java.util.Date
+package class_files;
+import java.util.Date;
 
-public class Payment{
+public class Payment {
 
     /* Attributes */
     private int cardNumber;
@@ -9,16 +10,16 @@ public class Payment{
     private int ccv;
 
     /* Constructor */
-    private Payment(){
+    public Payment(){
         cardNumber = 0;
-        nameOnCard = '';
+        nameOnCard = "";
         expiryDate = new Date();
         ccv = 0;
     }
 
     /* Methods */
-    private boolean confirmPayment(){
-        return true
+    public boolean confirmPayment(){
+        return true;
     }
 }
 
