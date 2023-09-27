@@ -3,7 +3,7 @@ package class_files;
 public class Course {
 
     /* Attributes */
-    private int courseID;
+    int courseID;
     String name;
     String title;
     String subject;
@@ -15,14 +15,16 @@ public class Course {
     /* Constructor */
     public Course(){
         courseID = 0;
-        name = "";
-        title = "";
-        subject = "";
-        duration = "";
-        briefIntroduction = "";
+        name = "N/A";
+        title = "N/A";
+        subject = "N/A";
+        duration = "N/A";
+        briefIntroduction = "N/A";
         cost = 0.0;
         refundOption = false;
     }
+
+    /* Methods */
     public void publishCourse(){
 
     }
@@ -52,5 +54,26 @@ public class Course {
     /* Getters */
     public int getCourseID() {
         return courseID;
+    }
+    public String getName() {
+        return name;
+    }
+    public String getTitle() {
+        return title;
+    }
+    public String getSubject() {
+        return subject;
+    }
+    public String getDuration() {
+        return duration;
+    }
+    public String getBriefIntroduction() {
+        return briefIntroduction;
+    }
+    public Double getCost() {
+        return cost;
+    }
+    public boolean getRefundOption() {
+        return refundOption;
     }
 }

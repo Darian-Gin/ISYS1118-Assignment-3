@@ -11,14 +11,16 @@ public class User {
 
     /* Constructor */
     public User(){
-        firstName = "";
-        lastName = "";
-        email = "";
-        username = "";
-        password = "";
+        firstName = "N/A";
+        lastName = "N/A";
+        email = "N/A";
+        username = "N/A";
+        password = "N/A";
         contactNumber = 0;
 
     }
+    
+    /* Methods */
     public void login(){
 
     }
@@ -27,5 +29,25 @@ public class User {
     }
     public void register(){
 
+    }
+
+    /* Getters */
+    public String getFirstName(){
+        return firstName;
+    }
+    public String getLastName(){
+        return lastName;
+    }
+    public String getEmail(){
+        return email;
+    }
+    public String getUsername(){
+        return username;
+    }
+    public String getPassword(){
+        return password;
+    }
+    public int getContactNumber(){
+        return contactNumber;
     }
 }

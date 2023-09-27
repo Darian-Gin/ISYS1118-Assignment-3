@@ -6,9 +6,10 @@ public class Employee extends User{
 
     /* Constructor */
     public Employee(){
-        employeeId = "";
+        employeeId = "N/A";
     }
 
+    /* Methods */
     public void sendEmails(){
 
     }
@@ -16,4 +17,8 @@ public class Employee extends User{
 
     }
 
+    /* Getters */
+    public String getEmployeeID(){
+        return employeeId;
+    }
 }

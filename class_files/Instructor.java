@@ -6,13 +6,15 @@ public class Instructor extends Employee{
 
     /* Constructor */
     public Instructor(){
-        instructorId = "";
+        instructorId = "N/A";
     }
+
+    /* Methods */
     public void createCourse(){
 
     }
 
-    /* Setter for Instructor Details */
+    /* Setters */
     public void setInstructorDetails(String firstName, String lastName, String email, String username, String password, int contactNumber){
         this.firstName = firstName;
         this.lastName = lastName;
@@ -21,5 +23,10 @@ public class Instructor extends Employee{
         this.password = password;
         this.contactNumber = contactNumber;
     }
-  
+
+    /* Getters */
+    public String getInstructorID() {
+        return instructorId;
+    }
 }
+  

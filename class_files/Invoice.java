@@ -4,7 +4,7 @@ import java.util.Date;
 public class Invoice {
 
     /* Attributes */
-    String invoiceID;
+    int invoiceID;
     int ID;
     Date dateGenerated;
     Date datePaid;
@@ -13,13 +13,14 @@ public class Invoice {
 
     /* Constructor */
     public Invoice(){
-        invoiceID = "";
+        invoiceID = 0;
         ID = 0;
         dateGenerated = new Date();
         datePaid = new Date();
-        courseName = "";
+        courseName = "N/A";
     }
 
+    /* Methods */
     public boolean printInvoice(int ID){
         return true;
     }
