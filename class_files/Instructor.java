@@ -2,7 +2,7 @@ package class_files;
 public class Instructor extends Employee{
 
     /* Attributes */
-    int instructorId = 0;
+    int instructorId;
 
     /* Constructor */
     public Instructor(){
