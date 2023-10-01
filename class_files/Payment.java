@@ -19,6 +19,7 @@ public class Payment {
 
     /* Methods */
     public boolean confirmPayment(){
+        System.out.println("Payment Confirmed!");
         return true;
     }
 }

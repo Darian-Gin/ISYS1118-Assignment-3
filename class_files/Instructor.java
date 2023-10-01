@@ -1,7 +1,5 @@
 package class_files;
 
-import java.util.Date;
-
 public class Instructor extends Employee{
 
     /* Attributes */
@@ -30,9 +28,13 @@ public class Instructor extends Employee{
         Payment payment = new Payment();
 
         // Perform Sequence Diagram Methods for Registering a Course
+        System.out.println("Setting Course Details...");
         newCourse.setCourseDetails(1234, "IFN", "Software Engineering Fundamentals", "CourseSubject", "Duration", "CourseIntro", 0.0, true);
+        System.out.println("Verifying Instructor Details...");
         newInstructor.verifyDetails(newInstructor);
+        System.out.println("Confirming Payment...");
         payment.confirmPayment();
+        System.out.println("Course Successfully Registered!");
 
     }
 

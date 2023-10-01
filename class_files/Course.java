@@ -24,20 +24,6 @@ public class Course {
         refundOption = false;
     }
 
-    /* Methods */
-    public void publishCourse(){
-
-    }
-    public void unpoublishCourse(){
-
-    }
-    public void lockCourse(){
-
-    }
-    public boolean isPaid(){
-        return false;
-    }
-
     /* Setter for Course Details */
     public void setCourseDetails(int courseID, String name, String title, String subject, 
                                 String duration, String briefIntroduction, double cost, boolean refundOption){
@@ -49,32 +35,8 @@ public class Course {
         this.briefIntroduction = briefIntroduction;
         this.cost = cost;
         this.refundOption = refundOption;
+        System.out.println("Course Details Set!");
         
     }
 
-    /* Getters */
-    public int getCourseID() {
-        return courseID;
-    }
-    public String getName() {
-        return name;
-    }
-    public String getTitle() {
-        return title;
-    }
-    public String getSubject() {
-        return subject;
-    }
-    public String getDuration() {
-        return duration;
-    }
-    public String getBriefIntroduction() {
-        return briefIntroduction;
-    }
-    public Double getCost() {
-        return cost;
-    }
-    public boolean getRefundOption() {
-        return refundOption;
-    }
 }

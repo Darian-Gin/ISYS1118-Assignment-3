@@ -9,19 +9,9 @@ public class Employee extends User{
         employeeId = "N/A";
     }
 
-    /* Methods */
-    public void sendEmails(){
-
-    }
-    public void getStudentDetails(int ID){
-
-    }
-
     /* Getters */
-    public String getEmployeeID() {
-        return employeeId;
-    }
     public boolean verifyDetails(Instructor instructor){
+        System.out.println("Instructor Details Verified!");
         return true;
     }
 }

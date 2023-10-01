@@ -7,6 +7,7 @@ public class Inquiry {
     Date dateCreated;
     String authorUsername;
     String inquiryStatus;
+    String inquiryResponse;
 
     /* Constructor */
     public Inquiry(){
@@ -14,36 +15,47 @@ public class Inquiry {
         dateCreated = new Date();
         authorUsername = "N/A";
         inquiryStatus = "N/A";
+        inquiryResponse = "N/A";
     }
 
     /* Methods */
-    public Inquiry getInquiry(){
+    public Inquiry getInquiry(int ID){
         Inquiry inquiry = new Inquiry();
+        System.out.println("Gathering Inquiry based on ID...");
+        // Inquiry Received from DAO
+        System.out.println("Inquiry Received!");
         return inquiry;
     }
-    public void updateStatus(String Status){
-
+    public void updateStatus(String status){
+        System.out.println("Updating Inquiry Status...");
+        System.out.println("Updating Status to " + status + "!");
+        setInquiryStatus(status);
     }
-    public String respondToInquiry(){
-        String response = "response";
-        return response;
+    public boolean respondToInquiry(Inquiry inquiry){
+        System.out.println("Responding to Inquiry...");
+        inquiry.setInquiryResponse("response");
+        return inquiry.validateResponse(inquiry.inquiryResponse);
     }
     public boolean validateResponse(String response){
-        return true;
-    }
+        System.out.println("Validating Response...");
+        boolean valid;
+        if(response == ""){
+            valid = false;
+        }
+        else{
+            valid = true;
+            System.out.println("Response is Valid!");
+        }
+        return valid;
 
-    /* Getters */
-    public int getInquiryID(){
-        return ID;
     }
-    public Date getInquiryCreationDate(){
-        return dateCreated;
+    
+    /* Setters */
+    public void setInquiryResponse(String response){
+        this.inquiryResponse = response;
     }
-    public String getInquiryAuthor(){
-        return authorUsername;
-    }
-    public String getInquiryStatus(){
-        return inquiryStatus;
+    public void setInquiryStatus(String status){
+        this.inquiryStatus = status;
     }
 
 
