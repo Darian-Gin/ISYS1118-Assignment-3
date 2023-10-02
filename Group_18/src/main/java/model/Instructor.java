@@ -1,4 +1,4 @@
-package class_files;
+package Group_18.src.main.java.model;
 
 public class Instructor extends Employee{
 
@@ -22,7 +22,7 @@ public class Instructor extends Employee{
     /* Methods */
     public void createCourse(){
 
-        // CreateObjects
+        // Create Relevant Instances
         Course newCourse =  new Course();
         Instructor newInstructor = new Instructor("IFN", "ILN", 8752, "Email", "Iusername", "Ipassword", 1234);
         Payment payment = new Payment();
@@ -30,11 +30,14 @@ public class Instructor extends Employee{
         // Perform Sequence Diagram Methods for Registering a Course
         System.out.println("Setting Course Details...");
         newCourse.setCourseDetails(1234, "IFN", "Software Engineering Fundamentals", "CourseSubject", "Duration", "CourseIntro", 0.0, true);
+        
         System.out.println("Verifying Instructor Details...");
         newInstructor.verifyDetails(newInstructor);
+        
         System.out.println("Confirming Payment...");
         payment.confirmPayment();
-        System.out.println("Course Successfully Registered!");
+        
+        System.out.println("Course Successfully Registered!\n");
 
     }
 

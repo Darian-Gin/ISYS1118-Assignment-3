@@ -1,4 +1,4 @@
-package class_files;
+package Group_18.src.main.java.model;
 public class Employee extends User{
 
     /* Attributes */

@@ -1,4 +1,4 @@
-package class_files;
+package Group_18.src.main.java.model;
 
 public class Course {
 
@@ -35,6 +35,7 @@ public class Course {
         this.briefIntroduction = briefIntroduction;
         this.cost = cost;
         this.refundOption = refundOption;
+        
         System.out.println("Course Details Set!");
         
     }

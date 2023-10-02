@@ -1,4 +1,4 @@
-package class_files;
+package Group_18.src.main.java.model;
 import java.util.Date;
 
 public class Payment {
@@ -20,6 +20,7 @@ public class Payment {
     /* Methods */
     public boolean confirmPayment(){
         System.out.println("Payment Confirmed!");
+        
         return true;
     }
 }

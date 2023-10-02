@@ -1,4 +1,4 @@
-package class_files;
+package Group_18.src.main.java.model;
 import java.util.Date;
 
 public class Invoice {
@@ -28,6 +28,7 @@ public class Invoice {
         System.out.println("\tDate Generated: " + dateGenerated);
         System.out.println("\tDate Paid:      " + datePaid);
         System.out.println("\tCourse Name:    " + courseName);
+        
         return true;
     }
 
